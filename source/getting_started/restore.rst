@@ -37,7 +37,7 @@ It's always good to have a restore method of a backup in place.  Here are the st
  rsync -avz -e 'ssh -p 22' root@$ssh_server:/etc/fusionpbx /etc
  find /var/backups/fusionpbx/postgresql -mtime +2 -exec rm {} \;
 
- rsync -avz -e 'ssh -p 22' root@$ssh_server:/etc/freeswitch/ /etc
+ rsync -avz -e 'ssh -p 22' root@$ssh_server:/etc/freeswitch /etc
  rsync -avz -e 'ssh -p 22' root@$ssh_server:/var/lib/freeswitch/storage /var/lib/freeswitch
  rsync -avz -e 'ssh -p 22' root@$ssh_server:/var/lib/freeswitch/recordings /var/lib/freeswitch
  rsync -avz -e 'ssh -p 22' root@$ssh_server:/usr/share/freeswitch/scripts /usr/share/freeswitch
